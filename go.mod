@@ -1,4 +1,4 @@
-module github.com/umtaktpe/iyzipay-go
+module github.com/elifgider/iyzipay-go
 
 go 1.18
 

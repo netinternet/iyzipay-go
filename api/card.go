@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/umtaktpe/iyzipay-go/model"
-	"github.com/umtaktpe/iyzipay-go/utils"
+	"github.com/elifgider/iyzipay-go/model"
+	"github.com/elifgider/iyzipay-go/utils"
 )
 
 func RetriveCards(req utils.RequestConvertible, opt *model.Options) (*retriveCards, error) {

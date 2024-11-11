@@ -1,6 +1,6 @@
 package model
 
-import "github.com/umtaktpe/iyzipay-go/utils"
+import "github.com/elifgider/iyzipay-go/utils"
 
 type CardInformation struct {
 	cardAlias      string

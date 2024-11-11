@@ -1,6 +1,6 @@
 package request
 
-import "github.com/umtaktpe/iyzipay-go/utils"
+import "github.com/elifgider/iyzipay-go/utils"
 
 type CreateThreedsPayment struct {
 	paymentId        string

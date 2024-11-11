@@ -1,6 +1,6 @@
 package model
 
-import "github.com/umtaktpe/iyzipay-go/utils"
+import "github.com/elifgider/iyzipay-go/utils"
 
 type Address struct {
 	contactName string

@@ -11,9 +11,9 @@ import (
 	"net/http"
 	"time"
 
+	model "github.com/elifgider/iyzipay-go/model"
+	utils "github.com/elifgider/iyzipay-go/utils"
 	"github.com/sirupsen/logrus"
-	model "github.com/umtaktpe/iyzipay-go/model"
-	utils "github.com/umtaktpe/iyzipay-go/utils"
 )
 
 func request(method, url string, request utils.RequestConvertible, option *model.Options, respStruct interface{}) error {

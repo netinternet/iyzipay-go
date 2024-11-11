@@ -1,10 +1,10 @@
 package utils
 
 import (
-	"crypto/sha1"
+	"crypto/hmac"
+	"crypto/sha256"
 	"encoding/base64"
 	"math/rand"
-	"strings"
 	"time"
 )
 
@@ -20,14 +20,10 @@ func RandString(n int) string {
 	return string(random)
 }
 
-func GenerateHash(apiKey, secretKey, rnd, pki string) string {
-	hashString := apiKey + rnd + secretKey + pki
-	hasher := sha1.New()
-	hasher.Write([]byte(hashString))
-	hash := base64.URLEncoding.EncodeToString(hasher.Sum(nil))
-
-	hash = strings.Replace(hash, "_", "/", -1)
-	hash = strings.Replace(hash, "-", "+", -1)
-
+func GenerateHashHMACSHA256(randomKey, uriPath, requestBody, secretKey string) string {
+	data := randomKey + uriPath + requestBody
+	h := hmac.New(sha256.New, []byte(secretKey))
+	h.Write([]byte(data))
+	hash := base64.URLEncoding.EncodeToString(h.Sum(nil))
 	return hash
 }

@@ -63,7 +63,7 @@ func getHttpHeaders(_ utils.RequestConvertible, option *model.Options, uriPath, 
 	encryptedData := generateEncryptedData(rnd, uriPath, requestBody, option.GetApiSecret())
 	base64EncodedAuthorization := prepareAuthStringV2(option, rnd, encryptedData)
 
-	header["Authorization"] = "iys " + base64EncodedAuthorization
+	header["Authorization"] = "IYZWSv2" + " " + base64EncodedAuthorization
 	header["x-iyzi-rnd"] = rnd
 	header["x-iyzi-client-version"] = "iyzipay-php-2.0.51"
 	return header

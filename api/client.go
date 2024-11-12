@@ -13,7 +13,6 @@ import (
 
 	model "github.com/elifgider/iyzipay-go/model"
 	utils "github.com/elifgider/iyzipay-go/utils"
-	"github.com/sirupsen/logrus"
 )
 
 func request(method, url string, request utils.RequestConvertible, option *model.Options, respStruct interface{}) error {
@@ -56,7 +55,6 @@ func request(method, url string, request utils.RequestConvertible, option *model
 }
 
 func getHttpHeaders(_ utils.RequestConvertible, option *model.Options, uriPath, requestBody string) map[string]string {
-	logrus.Error("*-*-*-*-*-*-*-*-*-*-*-*-")
 	header := make(map[string]string)
 	header["Accept"] = "application/json"
 	header["Content-type"] = "application/json"
@@ -68,9 +66,6 @@ func getHttpHeaders(_ utils.RequestConvertible, option *model.Options, uriPath, 
 	header["Authorization"] = "iys " + base64EncodedAuthorization
 	header["x-iyzi-rnd"] = rnd
 	header["x-iyzi-client-version"] = "iyzipay-php-2.0.51"
-	logrus.Error("Authorization:", header["Authorization"])
-	logrus.Error("x-iyzi-rnd:", header["x-iyzi-rnd"])
-	logrus.Error("Authorization:", header["x-iyzi-client-version"])
 	return header
 }
 

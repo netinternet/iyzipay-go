@@ -1,4 +1,4 @@
-module github.com/elifgider/iyzipay-go
+module github.com/netinternet/iyzipay-go
 
 go 1.18
 

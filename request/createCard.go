@@ -1,8 +1,8 @@
 package request
 
 import (
-	model "github.com/elifgider/iyzipay-go/model"
-	utils "github.com/elifgider/iyzipay-go/utils"
+	model "github.com/netinternet/iyzipay-go/model"
+	utils "github.com/netinternet/iyzipay-go/utils"
 )
 
 type CreateCard struct {

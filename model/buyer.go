@@ -1,6 +1,6 @@
 package model
 
-import "github.com/elifgider/iyzipay-go/utils"
+import "github.com/netinternet/iyzipay-go/utils"
 
 type Buyer struct {
 	id                  string

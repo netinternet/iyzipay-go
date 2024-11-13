@@ -1,8 +1,8 @@
 package request
 
 import (
-	"github.com/elifgider/iyzipay-go/model"
-	"github.com/elifgider/iyzipay-go/utils"
+	"github.com/netinternet/iyzipay-go/model"
+	"github.com/netinternet/iyzipay-go/utils"
 )
 
 type RetrieveInstallmentInfo struct {

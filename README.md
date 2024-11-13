@@ -2,7 +2,7 @@
 
 # Installation
 ```
-go get github.com/elifgider/iyzipay-go
+go get github.com/netinternet/iyzipay-go
 ```
 
 # Usage
@@ -12,10 +12,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/elifgider/iyzipay-go/api"
-	"github.com/elifgider/iyzipay-go/model"
-	"github.com/elifgider/iyzipay-go/request"
-	"github.com/elifgider/iyzipay-go/utils"
+	"github.com/netinternet/iyzipay-go/api"
+	"github.com/netinternet/iyzipay-go/model"
+	"github.com/netinternet/iyzipay-go/request"
+	"github.com/netinternet/iyzipay-go/utils"
 )
 
 func main() {

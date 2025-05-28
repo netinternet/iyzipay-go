@@ -80,6 +80,7 @@ type retrievePayment struct {
 	Status                       string  `json:"status"`
 	Locale                       string  `json:"locale"`
 	SystemTime                   int64   `json:"systemTime"`
+	ConversationID               string  `json:"conversationId"`
 	Price                        float64 `json:"price"`
 	PaidPrice                    float64 `json:"paidPrice"`
 	Installment                  int     `json:"installment"`

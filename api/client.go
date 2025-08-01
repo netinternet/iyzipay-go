@@ -78,5 +78,5 @@ func generateEncryptedData(randomKey, uriPath, requestBody, secretKey string) st
 }
 func prepareAuthStringV2(options *model.Options, rnd, encryptedData string) string {
 	authString := "apiKey:" + options.GetApiKey() + "&randomKey:" + rnd + "&signature:" + encryptedData
-	return base64.URLEncoding.EncodeToString([]byte(authString))
+	return base64.StdEncoding.EncodeToString([]byte(authString))
 }
